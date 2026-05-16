@@ -102,7 +102,7 @@ npx playwright test
 ## Test Results
 
 ### Unit Testing
-_To be added after implementation._
+![alt text](unit_test.png)
 
 ### Integration Testing
 _To be added after implementation._

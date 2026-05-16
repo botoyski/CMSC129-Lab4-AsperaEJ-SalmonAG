@@ -1,13 +1,14 @@
-function validateTaskName() {
-  throw new Error('Not implemented');
+function validateTaskName(name) {
+  return typeof name === 'string' && name.trim().length > 0;
 }
 
 function generateTaskId() {
-  throw new Error('Not implemented');
+  return Math.random().toString(36).substring(2, 9);
 }
 
-function filterCompletedTasks() {
-  throw new Error('Not implemented');
+function filterCompletedTasks(tasks) {
+  if (!Array.isArray(tasks)) return [];
+  return tasks.filter((task) => !task.completed);
 }
 
 module.exports = {

@@ -3,6 +3,8 @@
 A simple Task Manager web application built using Test-Driven Development (TDD) for CMSC 129 Laboratory Assignment 4. The application allows users to create, view, and delete tasks in order to manage daily activities efficiently. The project focuses on applying the Red-Green-Refactor workflow through unit, integration, and system testing with automated CI support.
 
 ---
+## Live Deployment
+https://cmsc129-lab4-asperaej-salmonag-v2.vercel.app/
 
 ## User Stories
 
@@ -108,7 +110,7 @@ npx playwright test
 ![alt text](images/integration_test.png)
 
 ### System Testing
-_To be added after implementation._
+![alt text](images/system_test.png)
 
 ---
 
@@ -120,4 +122,11 @@ Pipeline behavior:
 - RED commits → failing CI
 - GREEN commits → passing CI
 
-Screenshots of CI runs will be added after implementation.
+## Live Depl
+
+## Reflection
+
+What I found most difficult about writing tests before code was figuring out the expected behavior without already having an implementation in mind. At first, I kept wanting to write the function or the API first because it felt more natural, and only then think about what the test should check. Writing tests first forced me to think more strictly about inputs, outputs, and edge cases before anything existed. It was also challenging to design meaningful tests for integration and system levels because I had to imagine how the routes and UI would behave without actually building them yet.
+
+Writing tests first definitely changed the way I designed my code. Instead of building everything in one file or writing logic directly inside routes, I was pushed to separate concerns more clearly. For example, I ended up splitting business logic, route handling, and data storage so that each test level could target a specific part of the system. It also made me focus on simplicity during implementation, since the goal was only to pass the tests rather than over-engineer features. Overall, it made the development process more structured and intentional, even though it felt slower at the beginning.
+
